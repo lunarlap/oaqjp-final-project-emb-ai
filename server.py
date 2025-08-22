@@ -18,7 +18,7 @@ def emotion_analyzer():
 
     # Handle cases where the input is invalid
     if response['dominant_emotion'] is None:
-        return "Invalid text! Please try again."
+        return "Invalid text! Please try again!"
 
     # Format the output string as required
     dominant_emotion = response.pop('dominant_emotion')
@@ -38,4 +38,4 @@ def render_index_page():
     return render_template('index.html')
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001)
+    app.run(host="0.0.0.0", port=5002)
